@@ -1,0 +1,17 @@
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\bin\Debug\net7.0\AzureWorkItemAutomation.exe
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\bin\Debug\net7.0\AzureWorkItemAutomation.deps.json
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\bin\Debug\net7.0\AzureWorkItemAutomation.runtimeconfig.json
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\bin\Debug\net7.0\AzureWorkItemAutomation.dll
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\bin\Debug\net7.0\AzureWorkItemAutomation.pdb
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.csproj.AssemblyReference.cache
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.AssemblyInfoInputs.cache
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.AssemblyInfo.cs
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.csproj.CoreCompileInputs.cache
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.csproj.CopyComplete
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.dll
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\refint\AzureWorkItemAutomation.dll
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.pdb
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\AzureWorkItemAutomation.genruntimeconfig.cache
+C:\Users\RudGalangco\source\repos\AzureWorkItemAutomation\obj\Debug\net7.0\ref\AzureWorkItemAutomation.dll

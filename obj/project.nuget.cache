@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xy1LDS0YVR1aZjiv1vpM+tw1OaUO/VeI1QxuxRB2X9vuc8+tXW0Pu0oY0IsHmto+Zo4L8ysfhBKI/lnoqakXVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RudGalangco\\source\\repos\\AzureWorkItemAutomation\\AzureWorkItemAutomation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RudGalangco\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
