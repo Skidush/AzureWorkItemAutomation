@@ -32,6 +32,20 @@ public class AzureDevopsServicesClient
         HttpClient = client;
     }
 
+    public async void GetProjects()
+    {
+        try
+        {
+            var a = ExecuteHttpMethod<object>(HttpMethod.Get, "/_apis/projects", null);
+
+            Console.WriteLine(a);
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
     public T Get<T>(string requestUri, string expectedMediaType = "application/json", bool expectSuccess = true)
     {
         return ExecuteHttpMethod<T>(HttpMethod.Get, requestUri, null, expectedMediaType, expectSuccess);
@@ -44,18 +58,17 @@ public class AzureDevopsServicesClient
 
     private T ExecuteHttpMethod<T>(HttpMethod httpMethod, string requestUri, HttpContent? content, string expectedMediaType = "application/json", bool expectSuccess = true)
     {
-        requestUri = _baseUri + "/" + requestUri;
+        requestUri = _baseUri + requestUri;
 
-        HttpClient client = new HttpClient();
-        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(expectedMediaType));
-
+        HttpClient client = HttpClient;
         Task<HttpResponseMessage> httpTask = null;
 
         if (httpMethod == HttpMethod.Get) {
-            httpTask = Task.Run(() => HttpClient.GetAsync(requestUri));
-        } else if (httpMethod == HttpMethod.Post) { }
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(expectedMediaType));
+            httpTask = Task.Run(() => client.GetAsync(requestUri));
+        } else if (httpMethod == HttpMethod.Post)
         {
-            httpTask = Task.Run(() => HttpClient.PostAsync(requestUri, content));
+            httpTask = Task.Run(() => client.PostAsync(requestUri, content));
         }
 
         httpTask.Wait();

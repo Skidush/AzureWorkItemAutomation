@@ -13,30 +13,19 @@ namespace AzureWorkItemAutomation.Constants
         [Description("add")]
         Add,
 
-        [Description("update")]
-        Update,
+        [Description("remove")]
+        Remove,
 
-        [Description("delete")]
-        Delete
-    }
+        [Description("replace")]
+        Replace,
 
-    public static class WorkItemActionExtensions
-    {
-        public static string Value(this WorkItemOperation action)
-        {
-            FieldInfo field = action.GetType().GetField(action.ToString());
+        [Description("move")]
+        Move,
 
-            if (field != null)
-            {
-                DescriptionAttribute attribute = (DescriptionAttribute)Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute));
+        [Description("copy")]
+        Copy,
 
-                if (attribute != null)
-                {
-                    return attribute.Description;
-                }
-            }
-
-            return action.ToString();
-        }
+        [Description("Test")]
+        Test
     }
 }

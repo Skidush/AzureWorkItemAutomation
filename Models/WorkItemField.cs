@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AzureWorkItemAutomation.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace AzureWorkItemAutomation.Models
 
     public class WorkItemPathValuePair
     {
-        public string path { get; set; }
+        public WorkItemPath path { get; set; }
         public string? value { get; set; }
     }
 }

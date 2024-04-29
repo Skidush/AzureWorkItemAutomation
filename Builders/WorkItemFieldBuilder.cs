@@ -1,4 +1,5 @@
 ﻿using AzureWorkItemAutomation.Constants;
+using AzureWorkItemAutomation.Extensions;
 using AzureWorkItemAutomation.Models;
 using System;
 using System.Collections.Generic;
@@ -22,9 +23,9 @@ namespace AzureWorkItemAutomation.Builders
             _workItemField.op = operation.Value();
         }
 
-        public void SetPath(string path)
+        public void SetPath(WorkItemPath path)
         {
-            _workItemField.path = path;
+            _workItemField.path = path.Value();
         }
 
         public void SetValue(string? value)
@@ -42,7 +43,7 @@ namespace AzureWorkItemAutomation.Builders
             return _workItemField;
         }
 
-        public WorkItemField Build(WorkItemOperation operation, string path, string? value = null, string? from = null)
+        public WorkItemField Build(WorkItemOperation operation, WorkItemPath path, string? value = null, string? from = null)
         {
             SetOperation(operation);
             SetPath(path);
